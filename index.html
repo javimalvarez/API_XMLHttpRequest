@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo AJAX con GET & POST</title>
+    <script src="script.js" defer></script>
+</head>
+</head>
+<body>
+    <main>
+        <div>
+            <form action="server.php" method="POST" id="registro">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="correo">Correo:</label>
+                <input type="mail" id="correo" name="correo">
+                <button type="submit" id="enviar">Enviar</button><br/>
+                <span class="error" id="error"></span><br/>
+            </form>
+        </div>
+        <div id="respuesta"></div>
+    </main>
+</body>
+</html>
