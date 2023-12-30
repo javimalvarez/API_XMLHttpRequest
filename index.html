@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo AJAX con GET & POST</title>
+    <link rel="stylesheet" type="text/css" href="styles/estilos.css">
+    <title>Login</title>
     <script src="script.js" defer></script>
 </head>
-</head>
 <body>
+    <header class="contenedor_encabezado">
+        <img class="logo" src="img/logo.png" alt="logo" title="logo"><br/>
+    </header>
     <main>
-        <div>
-            <form action="server.php" method="POST" id="registro">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre">
-                <label for="correo">Correo:</label>
-                <input type="mail" id="correo" name="correo">
-                <button type="submit" id="enviar">Enviar</button><br/>
-                <span class="error" id="error"></span><br/>
+        <span class="contenedor">Sign up as a S.H.I.E.L.D member agency</span>
+        <div class="contenedor2">
+            <form action="server.php" method="POST">
+                <label for="nombre">name:&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input type="text" id="nombre" name="nombre" title="Solo se permite la inclusion de letras" min="2" required><br/>
+                <span class="error" id="info_nombre"></span><br>
+                <label for="apellido">surname:&nbsp</label> 
+                <input type="text" id="apellido" name="apellido" title="Solo se permite la inclusion de letras" min="2" required><br/>
+                <span class="error" id="info_apellido"></span><br>
+                <label for="correo">email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input type="email" id="correo" name="correo" placeholder="example@example.com" required><br/>
+                <span class="error" id="info_correo"></span><br>
+                <label for="contraseña">password:&nbsp</label>
+                <input type="password" id="contraseña" name="contraseña" title="La contraseña tendra una longitud mínima de 6 carácteres e incluirá al menos una letra mayúscula, una letra minúscula y un número" min="6" required><br/>
+                <span class="error" id="info_contraseña"></span><br>
+                <label for="confirmar">password:&nbsp</label>
+                <input type="password" id="confirmar" name="confirmar" placeholder="Confirm password" required><br/>
+                <span class="error" id="info_confirmacion"></span><br>
+                <button type="submit" id="enviar" name="enviar">Sign up!</button>
             </form>
         </div>
-        <div id="respuesta"></div>
     </main>
+    <footer>
+        <span class="contenedor"><img src="img/logo2.png"></span>
+        <div>
+            © S.H.I.E.L.D. Agency - Defense division of the US goverment<br>
+            Desarrollo de Aplicaciones Web | Linkia FP<br>
+            Diciembre 2023 - Autor: Francisco Javier Martínez Álvarez<br>
+        </div>
+    </footer>
 </body>
 </html>
