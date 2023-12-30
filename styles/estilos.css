@@ -1,0 +1,79 @@
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: auto;
+    min-height: 100%;
+    position: relative;
+    background-color: #faf6d3;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Estilo encabezado*/
+.contenedor_encabezado {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*Estilo del logo dentro del encabezado*/
+.logo {
+    margin: 2px;
+    padding: 2px;
+    width: 10em;
+    height: auto;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/*Estilo formulario*/
+.contenedor2{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+form {
+    padding: 20px;
+}
+
+/*Estilo botones de la página*/
+#enviar{
+    font-size: 1.2em;
+    color: white;
+    background-color: #ED1D24;
+    border: #ED1D24 .9px solid;
+    border-radius: 3px;
+    margin-left: 38%;
+}
+
+.error {
+    color: red;
+    font-size: .8em;
+}
+
+/*Estilo pie de página*/
+footer {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    bottom: 0px;
+}
+
